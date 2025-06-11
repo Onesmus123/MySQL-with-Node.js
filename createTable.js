@@ -20,9 +20,10 @@ connection.connect(error => {
 
     const createTableQuery = `
         CREATE TABLE IF NOT EXISTS adminNames (
-            admin_id INT,
-            first_name VARCHAR(20),
-            last_name VARCHAR(20)
+            admin_id INT PRIMARY KEY,
+            full_name VARCHAR(20),
+            age INT,
+            address VARCHAR(20)
         )
     `;
 
