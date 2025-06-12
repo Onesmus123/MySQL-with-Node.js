@@ -21,9 +21,8 @@ connection.connect(error => {
     const createTableQuery = `
         CREATE TABLE IF NOT EXISTS adminNames (
             admin_id INT PRIMARY KEY,
-            full_name VARCHAR(20),
-            age INT,
-            address VARCHAR(20)
+            first_name VARCHAR(20),
+            last_name VARCHAR(20)
         )
     `;
 
@@ -33,7 +32,7 @@ connection.connect(error => {
             console.log(error.message);
         } else {
             console.log("Table created successfully.");
-            console.log(result);
+            console.table(result);
         }
 
         connection.end();
