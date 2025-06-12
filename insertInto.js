@@ -18,7 +18,7 @@ connection.connect(error => {
 
         const queryData = `
         INSERT INTO adminNames (admin_id, first_name, last_name)
-        VALUES (5616, 'Evan Mutua', 'Ngei')
+        VALUES (5580, 'Emmanuel', 'Joseph')
         `
 
         connection.query(queryData, (error, result) => {
