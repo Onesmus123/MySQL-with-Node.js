@@ -16,7 +16,7 @@ connection.connect(error => {
 
         // The WHERE clause specifies which record or records that should be updated. 
         // If you omit the WHERE clause, all records will be updated!
-        const updateData = `UPDATE adminnames SET first_name = "John", last_name = "Iluka" WHERE admin_id = 5480`
+        const updateData = `UPDATE adminnames SET first_name = "Emmanuel" WHERE admin_id = 5580`;
 
         connection.query(updateData, (error,result) => {
             if(error){
