@@ -16,7 +16,7 @@ connection.connect(error => {
 
         const addConstraintQuery = `
             ALTER TABLE adminNames 
-            ADD CONSTRAINT uq_admin_id UNIQUE (admin_id)
+            ADD CONSTRAINT uq_admin_id PRIMARY KEY (admin_id)
         `;
 
         connection.query(addConstraintQuery, (error, result) => {
